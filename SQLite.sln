@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLite.Tests", "tests\SQLite.Tests.csproj", "{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A0E59A10-7BD0-4554-B133-66FA850159BE}"
@@ -9,18 +11,71 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		nuget\sqlite-net.nuspec = nuget\sqlite-net.nuspec
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WinSQLite", "WinSQLite\WinSQLite.vcxproj", "{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinSQLite.Tests", "WinSQLite.Tests\WinSQLite.Tests.csproj", "{993A5C77-6B84-40F3-9711-51635CE7F041}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Debug|ARM.Build.0 = Debug|Any CPU
+		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Debug|x64.Build.0 = Debug|Any CPU
+		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Debug|x86.Build.0 = Debug|Any CPU
 		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Release|ARM.ActiveCfg = Release|Any CPU
+		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Release|ARM.Build.0 = Release|Any CPU
+		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Release|x64.ActiveCfg = Release|Any CPU
+		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Release|x64.Build.0 = Release|Any CPU
+		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Release|x86.ActiveCfg = Release|Any CPU
+		{6947A8F1-99BE-4DD1-AD4D-D89425CE67A2}.Release|x86.Build.0 = Release|Any CPU
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Debug|ARM.ActiveCfg = Debug|ARM
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Debug|ARM.Build.0 = Debug|ARM
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Debug|x64.ActiveCfg = Debug|x64
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Debug|x64.Build.0 = Debug|x64
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Debug|x86.ActiveCfg = Debug|Win32
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Debug|x86.Build.0 = Debug|Win32
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Release|Any CPU.ActiveCfg = Release|Win32
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Release|ARM.ActiveCfg = Release|ARM
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Release|ARM.Build.0 = Release|ARM
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Release|x64.ActiveCfg = Release|x64
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Release|x64.Build.0 = Release|x64
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Release|x86.ActiveCfg = Release|Win32
+		{5EAA5F41-EFB6-4C3D-BBCE-1E5060D55260}.Release|x86.Build.0 = Release|Win32
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Debug|ARM.ActiveCfg = Debug|ARM
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Debug|ARM.Build.0 = Debug|ARM
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Debug|x64.ActiveCfg = Debug|x64
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Debug|x64.Build.0 = Debug|x64
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Debug|x86.ActiveCfg = Debug|x86
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Debug|x86.Build.0 = Debug|x86
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Release|Any CPU.Build.0 = Release|Any CPU
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Release|ARM.ActiveCfg = Release|ARM
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Release|ARM.Build.0 = Release|ARM
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Release|x64.ActiveCfg = Release|x64
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Release|x64.Build.0 = Release|x64
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Release|x86.ActiveCfg = Release|x86
+		{993A5C77-6B84-40F3-9711-51635CE7F041}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = tests\SQLite.Tests.csproj
